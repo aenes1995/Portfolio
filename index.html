@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      align-self: center;
+      margin: 0; padding: 0;
+      background: #292B2E;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    p {
+      margin: 16px 0;
+      line-height: 1.5;
+    }
+    header p {
+      margin-top: .5rem;
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      font-family: 'Montserrat', 'Inter', sans-serif; font-weight: 800;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ddd;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding-bottom: .5rem;
+    }
+    .page-content{
+      background: #f5f5f5;
+      margin-left: 450px;
+      margin-right: 450px;
+      align-self: center;
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 3rem;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .project video {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: .5rem;
+    }
+
+    .project .top{ 
+      display:flex; 
+      justify-content:space-between; 
+      gap:10px; 
+      align-items:baseline 
+    }
+
+    .project .content{
+      padding: 1rem;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 .5rem;
+    }
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .image-row img {
+      width: 180px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .image-row-horizontal {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .image-row-horizontal img {
+      width: 400px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    .video-wrapper iframe {
+      width: 640px;
+      height: 360px;
+      border-radius: 12px;
+    }
+
+  </style>
+</head>
+
+<div class = "page-content"> 
+<body>
+
+  <header>
+    <h1>Alp Enes ARICI</h1>
+    <p> Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#game_development">Game Development</a>
+    <a href="#other">Other</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-indent: 2em;">I have always had a strong desire to create. Fortunately, I studied computer engineering. This decision guided me to new horizons such as programming and computer science.</p>
+    <p style="text-indent: 2em;">In addition to these, I have loved playing computer games since childhood. I have always been fascinated by the technology and imagination behind them. This fascination made me dream of creating my own games and showing them to my friends. All of these experiences pushed me toward game development.</p>
+  </section>
+
+  <section id="game_development">
+    <h2>Game Development</h2>
+
+    <div class="project">
+
+      <div class = "content"> 
+        <div class="top">
+          <h3>Tapp!</h3>
+          <span class="meta">Google Play · <a href="https://play.google.com/store/apps/details?id=com.thelastgamebender.Tapp" target="_blank">Link</a></span>
+        </div>
+
+        <p>It’s a published 2D mobile arcade game. I handled the gameplay, UI design, music, as well as game and level design. It also includes many subsystems for maintenance and an improved user experience.</p>
+
+        <div class="image-row">
+          <img src="https://play-lh.googleusercontent.com/Jy5YAVqvCW2VhmqLFPJmfAYoUrfa0bv721_O3v20z2kl_pu80Y-F7SX53lwTwZYbKMY=w2560-h1440-rw" alt="Preview 1">
+          <img src="https://play-lh.googleusercontent.com/Qmbt-e8eFKd5X5DGYRn7s6JdGzz0r8h_ZQd4zfR_-x-VQ836WR9axHZ0MgqoEl-XsBk=w2560-h1440-rw" alt="Preview 2">  
+          <img src="https://play-lh.googleusercontent.com/T_6QPOl6MIr-LdBXSAf71uBbG_s_XB4UAaSWBouYRY51r_t9buWNiIN0bUOuZizELmc=w2560-h1440-rw" alt="Preview 3">
+          <img src="https://play-lh.googleusercontent.com/Omr6qRIFYllqB2fOKpTrmB5lXHwsRJ78Xrwkr-farLPb2203HZmks6ct1nDyN5cO2zXU=w2560-h1440-rw" alt="Preview 4">
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="project">
+      <div class = "content"> 
+
+        <h3>WS</h3>
+
+        <p>It is a 3D mobile zombie survival game. I created the gameplay, SFX, and both level and game design. We needed to develop a level design tool to allow this project to progress properly.</p>
+
+        <p>This tool can generate levels from our data—such as which actions occur in a level or which enemies appear. It can also decorate rooms and place props in appropriate areas.</p>
+
+        <p>Due to financial constraints, we could not continue development of this game.</p>
+
+        <p><b>Features:</b> </p>
+        <ul>
+          <li>Procedural Generation</li>
+          <li>Shader Graph</li>
+          <li>Post Processing</li>
+        </ul>
+
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/HjgcAGgmA3U" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project">
+      <div class = "content"> 
+
+        <h3>Procedural Tree & Vegetation Generator</h3>
+        <p>I designed a tree-generation method for my dream game. I used only cubes to create the plants because of an artistic choice I made. I can say that my method works quite well in some scenarios, but there is still room for improvement.</p>
+        <p>I also designed an editor to generate vegetation. It uses ECS to handle large numbers of instances efficiently.</p>
+        <p>As a note I used this <a href="https://github.com/KristinLague/Low-Poly-Terrain-Generator" target="_blank">Git</a> repo to generate low poly terrains.</p>
+
+        <p><b>Features:</b> </p>
+        <ul>
+          <li>Procedural Generation</li>
+          <li>ECS (Entity Component System)</li>
+          <li>Shader Graph</li>
+          <li>Post Processing</li>
+        </ul>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/o1WUHS-PtEg" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project">
+      <div class = "content"> 
+
+        <h3>3D Locomotion & Combat AI</h3>
+        <p>It is an animation-based movement system for an indie game project. I also designed AI systems for both combat and non-combat situations.</p>
+
+        <p><b>Features:</b> </p>
+        <ul>
+          <li>Motion Matching</li>
+          <li>Behaviour Trees</li>
+          <li>FSM (Finite State Machines)</li>
+        </ul>
+
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/gGU6Sn-62n4" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project">
+      <div class = "content">
+        <h3>Konrul</h3>
+        <p>I have always found the idea of making a game engine very interesting, but I didn’t know how to build one. Fortunately, a friend did—so I decided to build one. I wanted to be part of this project and created the user interfaces for it.</p>
+        <p>We also wanted to develop a game using this engine, so we decided to participate in GGJ 2020.</p>
+        <p><b>Features:</b> </p>
+          <ul>
+            <li>C++</li>
+            <li>ImGUI</li>
+            <li>OpenGL</li>
+        </ul>
+
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/rJpFe2YftY0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class = "content"> 
+        <div class="top">
+          <h3>Empty Paper - GGJ 2015</h3>
+          <span class="meta">Event Page · <a href="https://v3.globalgamejam.org/2015/games/bos-kagit-empty-paper" target="_blank">Link</a></span>
+        </div>
+        <p>It was my freshman year in college. A couple of my friends and I decided to participate in GGJ 2015. It was also my first game jam. Each of us took on a role for the event.</p>
+        <p>It is a story-based 2D isometric pixel art game prototype. I handled the game and level design. It was selected as the winner by local audience votes.</p>
+        <div class="image-row-horizontal">
+          <img src="https://v3.globalgamejam.org/sites/default/files/styles/game_sidebar__wide/public/game/featured_image/mainphoto.png?itok=_QjVmwbH&timestamp=1423641743" alt="Preview 1">
+          <img src="https://v3.globalgamejam.org/sites/default/files/styles/game_content__wide/public/games/screenshots/gamestills_-_4.png?itok=AwgcIxrO&timestamp=1423641743" alt="Preview 2">  
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="other">
+    <h2>Other</h2>
+
+    <div class="project">
+      <div class = "content">
+        <h3>Extracting Relationships Between People in Texts (Grad. Project - 2018)</h3>
+        <p>It is an entry-level natural language processing project. It can detect basic relationships between people. The project aims to help readers understand books more effectively.</p>
+
+        <p><b>Features:</b> </p>
+        <ul>
+          <li>Python</li>
+          <li>NLTK</li>
+          <li>Lemmatizing</li>
+          <li>Part Of Speech Tagging</li>
+          <li>Gender Tagging</li>
+          <li>PyQt</li>
+        </ul>
+
+        <div class="image-row-horizontal">
+          <img src="Images/Grad_1.png" alt="Preview 1">
+          <img src="Images/Grad_2.png" alt="Preview 2">  
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class = "content"> 
+        <h3>Breathe Trainer</h3>
+        <p>I have a strong passion for diving. To properly enjoy the underwater world, you must hold your breath well. That’s why I built a static apnea trainer for myself. You can create breathing tables and practice with it.</p>
+        <div class="image-row">
+          <img src="Images/BreathHold_1.jpg" alt="Preview 1">
+          <img src="Images/BreathHold_2.jpg" alt="Preview 2">  
+          <img src="Images/BreathHold_6.jpg" alt="Preview 3">  
+          <img src="Images/BreathHold_5.jpg" alt="Preview 4">  
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-indent: 1em">You can contact me from:</p>
+
+    <div style="text-indent: 1em">
+      <a href="mailto:alp.enes.arici@gmail.com">alp.enes.arici@gmail.com</a> • 
+      <a href="https://www.linkedin.com/in/alp-enes-arici/" target="_blank">LinkedIn</a> • 
+    </div>
+
+  </section>
+
+  <footer>
+    © 2025 Alp Enes ARICI — All rights reserved.
+  </footer>
+
+</body>
+
+</div>
+
+</html>
