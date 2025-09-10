@@ -17,6 +17,8 @@
       color: #fff;
       padding: 2rem;
       text-align: center;
+      width: 100%;
+      box-sizing: border-box;
     }
     header h1 {
       margin: 0;
@@ -34,6 +36,8 @@
     nav {
       text-align: center;
       margin: 1rem 0;
+      background: #f5f5f5;
+      padding: 1rem 0;
     }
     nav a {
       margin: 0 1rem;
@@ -59,8 +63,9 @@
       margin: 0 auto;
       max-width: 1000px;
       width: 100%;
-      padding: 0 1rem;
+      padding: 0;
       box-sizing: border-box;
+      overflow: hidden;
     }
 
     .project {
@@ -98,7 +103,10 @@
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
+      width: 100%;
+      box-sizing: border-box;
     }
+
     footer a {
       color: #fff;
       text-decoration: none;
@@ -113,20 +121,19 @@
     }
 
     .image-row img {
-      flex: 1 1 calc(25% - 16px); /* 4 resim yan yana */
+      flex: 1 1 calc(25% - 16px);
       max-width: calc(25% - 16px);
       border-radius: 8px;
       height: auto;
     }
 
     .image-row-horizontal img {
-      flex: 1 1 calc(50% - 16px); /* 2 resim yan yana */
+      flex: 1 1 calc(50% - 16px);
       max-width: calc(50% - 16px);
       border-radius: 8px;
       height: auto;
     }
 
-    /* Tablet için */
     @media (max-width: 900px) {
       .image-row img {
         flex: 1 1 calc(33.33% - 16px);
@@ -138,18 +145,16 @@
       }
     }
 
-    /* Telefon için */
     @media (max-width: 600px) {
       .image-row img {
-        flex: 1 1 calc(50% - 16px); /* 2 sütun */
+        flex: 1 1 calc(50% - 16px);
         max-width: calc(50% - 16px);
       }
     }
 
-    /* Çok küçük ekran (320px civarı) */
     @media (max-width: 400px) {
       .image-row img {
-        flex: 1 1 100%; /* tek sütun */
+        flex: 1 1 100%;
         max-width: 100%;
       }
     }
@@ -167,8 +172,8 @@
   </style>
 </head>
 
-<div class = "page-content"> 
 <body>
+<div class = "page-content"> 
 
   <header>
     <h1>Alp Enes ARICI</h1>
@@ -371,8 +376,7 @@
     © 2025 Alp Enes ARICI — All rights reserved.
   </footer>
 
-</body>
-
 </div>
+</body>
 
 </html>
