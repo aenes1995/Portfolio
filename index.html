@@ -54,11 +54,13 @@
       margin-right: 20px;
       padding-bottom: .5rem;
     }
-    .page-content{
+    .page-content {
       background: #f5f5f5;
-      margin-left: 450px;
-      margin-right: 450px;
-      align-self: center;
+      margin: 0 auto;
+      max-width: 1000px;
+      width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
     }
 
     .project {
@@ -102,28 +104,54 @@
       text-decoration: none;
       margin: 0 .5rem;
     }
-    .image-row {
+    .image-row,
+    .image-row-horizontal {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 16px;
     }
 
     .image-row img {
-      width: 180px;
-      height: auto;
+      flex: 1 1 calc(25% - 16px); /* 4 resim yan yana */
+      max-width: calc(25% - 16px);
       border-radius: 8px;
-    }
-
-    .image-row-horizontal {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
+      height: auto;
     }
 
     .image-row-horizontal img {
-      width: 400px;
-      height: auto;
+      flex: 1 1 calc(50% - 16px); /* 2 resim yan yana */
+      max-width: calc(50% - 16px);
       border-radius: 8px;
+      height: auto;
+    }
+
+    /* Tablet için */
+    @media (max-width: 900px) {
+      .image-row img {
+        flex: 1 1 calc(33.33% - 16px);
+        max-width: calc(33.33% - 16px);
+      }
+      .image-row-horizontal img {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+
+    /* Telefon için */
+    @media (max-width: 600px) {
+      .image-row img {
+        flex: 1 1 calc(50% - 16px); /* 2 sütun */
+        max-width: calc(50% - 16px);
+      }
+    }
+
+    /* Çok küçük ekran (320px civarı) */
+    @media (max-width: 400px) {
+      .image-row img {
+        flex: 1 1 100%; /* tek sütun */
+        max-width: 100%;
+      }
     }
 
     .video-wrapper {
